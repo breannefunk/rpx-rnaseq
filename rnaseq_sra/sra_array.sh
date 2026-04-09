@@ -26,7 +26,7 @@ prefetch -O $OUTDIR $SRR
 fasterq-dump --threads 6 --progress --split-files -O $OUTDIR $SRR
 
 #compress FASTQ files
-pigz -p 6 ${SRR}_*.fastq
+pigz -p 6 ${SRR}*.fastq
 
 
 
